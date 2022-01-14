@@ -33,6 +33,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         cityImage.append(UIImage(named: "alacahoyuk.jpg")!)
         cityImage.append(UIImage(named: "anavarza.jpg")!)
         cityImage.append(UIImage(named: "ani.jpg")!)
+        
+        navigationItem.title = "Ancient City Guide"
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -57,7 +59,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             let destinationVC = segue.destination as! DetailViewController
             
             destinationVC.images = selectedCityImage
-            destinationVC.cityImage = selectedCityName
+            destinationVC.cityName = selectedCityName
         }
     }
     
