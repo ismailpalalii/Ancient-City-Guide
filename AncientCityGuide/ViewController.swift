@@ -20,12 +20,12 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         tableView.delegate = self
         tableView.dataSource = self
         
-        cityName.append("Aigai")
-        cityName.append("Aizanoi")
-        cityName.append("Aktoprak")
-        cityName.append("Alacahoyuk")
-        cityName.append("Anavarza")
-        cityName.append("Ani")
+        cityName.append("Aigai Antik Kenti")
+        cityName.append("Aizanoi Antik Kenti")
+        cityName.append("Aktopraklık Höyük")
+        cityName.append("Alacahöyük")
+        cityName.append("Anavarza Antik Kenti")
+        cityName.append("Ani Ören Yeri")
         
         cityImage.append(UIImage(named: "aigai.jpg")!)
         cityImage.append(UIImage(named: "aizanoi.jpg")!)
@@ -59,7 +59,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             let destinationVC = segue.destination as! DetailViewController
             
             destinationVC.images = selectedCityImage
-            destinationVC.cityName = selectedCityName
+            destinationVC.cityNames = selectedCityName
         }
     }
     

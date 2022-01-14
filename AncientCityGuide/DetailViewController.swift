@@ -9,15 +9,16 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
-    @IBOutlet weak var cityTextField: UITextField!
+   
+    @IBOutlet weak var cityName: UILabel!
     @IBOutlet weak var cityImage: UIImageView!
     
-    var cityName = ""
+    var cityNames = ""
     var images = UIImage()
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        cityTextField.text = cityName
+        cityName.text = cityNames
         cityImage.image = images
     }
     

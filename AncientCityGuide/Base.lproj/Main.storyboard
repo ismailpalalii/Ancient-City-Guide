@@ -50,31 +50,33 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wqd-CS-2fh">
                                 <rect key="frame" x="44" y="203" width="326" height="201"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="201" id="GOd-DE-fW6"/>
-                                </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XU5-eU-SGh">
-                                <rect key="frame" x="159" y="494" width="97" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fk8-aO-hjP">
+                                <rect key="frame" x="117" y="443" width="180" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="hWG-T3-vgK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="n4a-GK-YIj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Wqd-CS-2fh" firstAttribute="top" secondItem="n4a-GK-YIj" secondAttribute="top" constant="115" id="4v1-sD-iUg"/>
-                            <constraint firstItem="Wqd-CS-2fh" firstAttribute="centerX" secondItem="XU5-eU-SGh" secondAttribute="centerX" id="DCe-Jk-MKb"/>
-                            <constraint firstItem="XU5-eU-SGh" firstAttribute="leading" secondItem="n4a-GK-YIj" secondAttribute="leading" constant="159" id="V3X-DL-zfc"/>
-                            <constraint firstItem="Wqd-CS-2fh" firstAttribute="centerX" secondItem="z0X-Ce-3XJ" secondAttribute="centerX" id="njp-tl-DlR"/>
-                            <constraint firstItem="n4a-GK-YIj" firstAttribute="bottom" secondItem="XU5-eU-SGh" secondAttribute="bottom" constant="334" id="qIV-Ut-pKI"/>
-                            <constraint firstItem="Wqd-CS-2fh" firstAttribute="leading" secondItem="n4a-GK-YIj" secondAttribute="leading" constant="44" id="xfN-tz-J6U"/>
+                            <constraint firstItem="Wqd-CS-2fh" firstAttribute="top" secondItem="n4a-GK-YIj" secondAttribute="top" constant="115" id="9ak-XC-b2C"/>
+                            <constraint firstItem="fk8-aO-hjP" firstAttribute="top" secondItem="Wqd-CS-2fh" secondAttribute="bottom" constant="39" id="B8r-ax-z8J"/>
+                            <constraint firstItem="fk8-aO-hjP" firstAttribute="leading" secondItem="n4a-GK-YIj" secondAttribute="leading" constant="117" id="EUO-MQ-uIF"/>
+                            <constraint firstItem="Wqd-CS-2fh" firstAttribute="centerX" secondItem="fk8-aO-hjP" secondAttribute="centerX" id="HkV-hp-9ue"/>
+                            <constraint firstItem="Wqd-CS-2fh" firstAttribute="leading" secondItem="n4a-GK-YIj" secondAttribute="leading" constant="44" id="PTn-cg-pZg"/>
+                            <constraint firstItem="Wqd-CS-2fh" firstAttribute="centerX" secondItem="z0X-Ce-3XJ" secondAttribute="centerX" id="Ppu-tg-myb"/>
+                            <constraint firstItem="n4a-GK-YIj" firstAttribute="bottom" secondItem="fk8-aO-hjP" secondAttribute="bottom" constant="350" id="d40-8d-ktV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4Ee-8j-aJf"/>
                     <connections>
                         <outlet property="cityImage" destination="Wqd-CS-2fh" id="DPe-0B-xVN"/>
-                        <outlet property="cityTextField" destination="XU5-eU-SGh" id="jbB-PS-5Mg"/>
+                        <outlet property="cityName" destination="fk8-aO-hjP" id="mGq-n9-1Ou"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4p0-xa-2ll" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
